@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lecturas clave del período</title>
+<style>
+:root{
+  --background:#0EFFF0;
+  --text:#082F33;
+  --accent-1:#2F28FF;
+  --accent-2:#00A9A5;
+  --accent-3:#F26A5A;
+  --white:#FFFFFF;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--background);
+  color:var(--text);
+  font-family:"FF Meta","Trebuchet MS",Arial,sans-serif;
+  line-height:1.4;
+}
+
+.shell{
+  max-width:1080px;
+  margin:0 auto;
+  padding:46px 30px 48px;
+}
+
+.eyebrow{
+  font-family:"FF Meta","Trebuchet MS",Arial,sans-serif;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  font-weight:700;
+  margin-bottom:8px;
+}
+
+h1,h2,h3{
+  font-family:"Broadside","Arial Black","Arial Narrow",Arial,sans-serif;
+}
+
+h1{
+  font-size:clamp(34px,5vw,58px);
+  line-height:1;
+  letter-spacing:-.035em;
+  margin:0 0 12px;
+}
+
+.lead{
+  font-size:17px;
+  max-width:700px;
+  margin:0 0 26px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  margin:0 0 14px;
+}
+
+.card{
+  background:rgba(255,255,255,.96);
+  border:1px solid rgba(8,47,51,.10);
+  border-radius:18px;
+  padding:18px 19px;
+  box-shadow:0 8px 22px rgba(8,47,51,.06);
+}
+
+.card h3{
+  margin:0 0 10px;
+  font-size:18px;
+  line-height:1.08;
+}
+
+.big{
+  font-family:"Broadside","Arial Black","Arial Narrow",Arial,sans-serif;
+  font-size:40px;
+  line-height:1;
+  letter-spacing:-.04em;
+  margin-bottom:7px;
+}
+
+.card p{
+  margin:0;
+  font-size:14px;
+  line-height:1.35;
+}
+
+.metric:nth-child(1) .big{color:var(--accent-1)}
+.metric:nth-child(2) .big{color:var(--accent-2)}
+.metric:nth-child(3) .big{color:var(--accent-3)}
+
+.insight{
+  min-height:122px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.insight b{font-weight:700}
+
+@media(max-width:760px){
+  .cards{grid-template-columns:1fr}
+  .shell{padding:34px 20px 36px}
+  .card{padding:17px}
+  .insight{min-height:auto}
+}
+</style>
+</head>
+<body>
+<div class="shell">
+  <div class="eyebrow">Síntesis 2023–2025</div>
+  <h1>Lecturas clave del período</h1>
+  <p class="lead">Principales patrones descriptivos observados entre 2023 y 2025.</p>
+
+  <div class="cards">
+    <div class="card metric">
+      <h3>Participación</h3>
+      <div class="big">83 → 115</div>
+      <p>establecimientos participantes.</p>
+    </div>
+    <div class="card metric">
+      <h3>Continuidad</h3>
+      <div class="big">44</div>
+      <p>establecimientos presentes los tres años.</p>
+    </div>
+    <div class="card metric">
+      <h3>Máximo anual</h3>
+      <div class="big">2024</div>
+      <p>mayor volumen de proyectos.</p>
+    </div>
+  </div>
+
+  <div class="cards">
+    <div class="card insight">
+      <h3>Investigación e innovación</h3>
+      <p>Predomina <b>Investigación</b>; Innovación aumenta de <b>39</b> a <b>84</b> registros.</p>
+    </div>
+    <div class="card insight">
+      <h3>Territorio</h3>
+      <p>Las <b>8 provincias</b> registran participación durante el período.</p>
+    </div>
+    <div class="card insight">
+      <h3>Siguiente lectura</h3>
+      <p>Estas variables permiten explorar perfiles y patrones espaciales.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
